@@ -9,16 +9,24 @@ lerna-debug.log*
 
 # Sensitive files
 serviceAccountKey.json
+.env
+.env.*
+!.env.example
 
-node_modules
-dist
-dist-ssr
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Local environment
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
