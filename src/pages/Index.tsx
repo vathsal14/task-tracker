@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from 'react';
+import logo from '/logo.png';
 import { TaskCard } from "@/components/TaskCard";
 import { TeamMember } from "@/components/TeamMember";
 import { CreateTaskDialog } from "@/components/CreateTaskDialog";
@@ -346,7 +347,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4">
             <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-auto">
               <div className="flex-shrink-0 h-14 w-14 sm:h-20 sm:w-20">
-                <img src="/logo.png" alt="Logo" className="h-full w-full object-contain" />
+                <img src={logo} alt="Logo" className="h-full w-full object-contain" />
               </div>
               <div className="min-w-0 flex-1">
                 <h1 className="text-lg sm:text-2xl font-bold text-foreground truncate">Project Tracker</h1>
