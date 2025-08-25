@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import logo from '/logo.png';
+import logo from '../../public/logo.png';
 import { TaskCard } from "@/components/TaskCard";
 import { TeamMember } from "@/components/TeamMember";
 import { CreateTaskDialog } from "@/components/CreateTaskDialog";
