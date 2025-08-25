@@ -22,7 +22,12 @@ export default defineConfig(({ mode }) => {
         "@": path.resolve(__dirname, "./src"),
       },
     },
+    define: {
+      'process.env': {}
+    },
     build: {
+      outDir: 'dist',
+      emptyOutDir: true,
       minify: isProd ? 'esbuild' : false,
       sourcemap: !isProd,
       rollupOptions: {
